@@ -3,40 +3,40 @@
 # TMSv113 JSF Rank WEB system
 
 umm
-«Ü¤Ö¤H·|¦bGitHubªºReadMe¼g±Ğ¾Ç
-¤£¹L°ò©ó¨}¤ßÁÙ¬O¼g¤@¤U¦n¤F
+å¾ˆå°‘äººæœƒåœ¨GitHubçš„ReadMeå¯«æ•™å­¸
+ä¸éåŸºæ–¼è‰¯å¿ƒé‚„æ˜¯å¯«ä¸€ä¸‹å¥½äº†
 
-Á`¤§³o´N¬O°ò©óTMSv113ªºWEB Rank¨t²Î
-µM«á³o¬OJSF©Ò¥H¥²¶·¥ÎGlassFish©ÎApache Tomcat¤§ÃşªºWEB Server
+ç¸½ä¹‹é€™å°±æ˜¯åŸºæ–¼TMSv113çš„WEB Rankç³»çµ±
+ç„¶å¾Œé€™æ˜¯JSFæ‰€ä»¥å¿…é ˆç”¨GlassFishæˆ–Apache Tomcatä¹‹é¡çš„WEB Server
 
-¦Ó§Ú¿ï¾Ü¤FGlassFish¡A¥i¯à¦]¬°¦Û¤v¤]ÆZ¬Á¼şªº¡C
+è€Œæˆ‘é¸æ“‡äº†GlassFishï¼Œå¯èƒ½å› ç‚ºè‡ªå·±ä¹Ÿè »ç»ç’ƒçš„ã€‚
 
 
-­º¥ıª½±µ¤U¸ü¸ÑÀ£ÁYGlassFish¡AµM«á·ÓµÛ°µ¨ì start-domain «ü¥O
-(°O±o¤U¸ü GlassFish - Full Platform ª©¥»)
+é¦–å…ˆç›´æ¥ä¸‹è¼‰è§£å£“ç¸®GlassFishï¼Œç„¶å¾Œç…§è‘—åšåˆ° start-domain æŒ‡ä»¤
+(è¨˜å¾—ä¸‹è¼‰ GlassFish - Full Platform ç‰ˆæœ¬)
 ```
 https://www.youtube.com/watch?v=WWCsvea8fGk
 ```
-¦pªG¤£¤p¤ß§R°£domain¸ê®Æ§¨¡A¥Î¦¹·s¼W
+å¦‚æœä¸å°å¿ƒåˆªé™¤domainè³‡æ–™å¤¾ï¼Œç”¨æ­¤æ–°å¢
 ```
 create-domain --adminport 4848 domain1
 ```
 
-µM«áÂsÄı http://localhost:4848/ ¹w³]GlassFish Admin Console Port
-¿ï¾Ü application -> deploy -> ¤W¶ÇMapleWeb_v113/dist/MapleWeb.war -> ok -> lauch
+ç„¶å¾Œç€è¦½ http://localhost:4848/ é è¨­GlassFish Admin Console Port
+é¸æ“‡ application -> deploy -> ä¸Šå‚³MapleWeb_v113/dist/MapleWeb.war -> ok -> launch
 
 
-µM«á¤@­ÓÂ²³æªº­¶­±´N¶}¦n¤F¡C
+ç„¶å¾Œä¸€å€‹ç°¡å–®çš„é é¢å°±é–‹å¥½äº†ã€‚
 
 ------------------------------
-«áºİ³s½u¸ê°T:
-¸ê®Æ®wIP
-¸ê®Æ®wPORT
-¸ê®Æ®w¦W
-¸ê®Æ®w¨Ï¥ÎªÌ
-¸ê®Æ®w±K½X
+å¾Œç«¯é€£ç·šè³‡è¨Š:
+è³‡æ–™åº«IP
+è³‡æ–™åº«PORT
+è³‡æ–™åº«å
+è³‡æ–™åº«ä½¿ç”¨è€…
+è³‡æ–™åº«å¯†ç¢¼
 
-³£¦b MapleWeb_v113/src/java/maple/DBOperation.java ¶i¦æ­×§ï
+éƒ½åœ¨ MapleWeb_v113/src/java/maple/DBOperation.java é€²è¡Œä¿®æ”¹
 ------------------------------
 
 ![alt text](https://i.imgur.com/551Rkab.jpg)
