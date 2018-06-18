@@ -17,6 +17,10 @@ umm
 ```
 https://www.youtube.com/watch?v=WWCsvea8fGk
 ```
+如果不小心刪除domain資料夾，用此新增
+```
+create-domain --adminport 4848 domain1
+```
 
 然後瀏覽 http://localhost:4848/ 預設GlassFish Admin Console Port
 選擇 application -> deploy -> 上傳MapleWeb_v113/dist/MapleWeb.war -> ok -> lauch
