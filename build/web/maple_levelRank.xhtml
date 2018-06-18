@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>MapleStory｜回到最初的感動</title>
+    </h:head>
+    <h:body style="padding-top: 50px; padding-bottom: 20px;">
+        <b:navBar brand="楓之谷" brandHref="maple.xhtml" inverse="true" fixed="top">
+            <b:navbarLinks>
+                <b:navLink value="首頁" href="maple.xhtml" iconAwesome="home"></b:navLink>
+                <b:dropMenu value="下載">
+                    <b:navLink value="遊戲主程式" href="download.xhtml"></b:navLink>
+                    <b:navLink value="遊戲外掛" href="nothing.xhtml"></b:navLink>
+                </b:dropMenu>
+                <b:dropMenu value="排名">
+                    <b:navLink value="等級排名" href="maple_levelRank.xhtml"></b:navLink>
+                    <b:navLink value="名聲排名" href="maple_fameRank.xhtml"></b:navLink>
+                    <b:navLink value="楓幣排名" href="maple_mesoRank.xhtml"></b:navLink>
+                </b:dropMenu>
+            </b:navbarLinks>
+
+<!--            <h:form id="login" styleClass="navbar-form navbar-right">
+                <div class="form-group">
+                    <b:inputText value="maple" placeholder="輸入帳號" fieldSize="sm"/>
+                </div> 
+                <div class="form-group">
+                    <b:inputSecret value="password" placeholder="輸入密碼" fieldSize="sm"/>
+                </div> 
+                <b:commandButton action="myerp_read.xhtml" value="登入" look="success" icon="chevron-right" iconAlign="right"/>
+            </h:form>-->
+
+        </b:navBar>
+        <b:jumbotron>
+            <b:container>
+                <h1>楓之谷 等級排名Top10</h1>
+            </b:container>
+            <b:container>
+                <h:form>
+                    <b:dataTable value="#{mapleBean.CHRList}"
+                                 var="chr"
+                                 page-length="10"
+                                 page-length-menu="10"
+                                 row-style-class="#{chr.level>200?'light-power':'light'}"> 
+                        <b:dataTableColumn value="#{chr.id}" label="角色編號"  />
+                        <b:dataTableColumn value="#{chr.name}" label="角色名稱" />
+                        <b:dataTableColumn value="#{chr.level}" label="等級" order="desc" />
+                    </b:dataTable>
+                </h:form>
+            </b:container>
+        </b:jumbotron>
+        <b:container>
+            <b:row>
+                <b:column col-md="4">
+                    <h2>等級排名</h2>
+                    <p>列舉全伺服器等級最高者Top10</p>
+                    <p>
+                        <a href="maple_levelRank.xhtml" >
+                            <b:button outcome="" value="前往查看 »"/></a>
+                    </p>
+                </b:column>
+                <b:column col-md="4">
+                    <h2>名聲排名</h2>
+                    <p>誰是人氣王Top10？</p>
+                    <p>
+                        <a href="maple_fameRank.xhtml" >
+                            <b:button outcome="" value="前往查看 »"/></a>
+                    </p>
+                </b:column>
+                <b:column col-md="4">
+                    <h2><img src="resources/images/meso.png" style="width: 30px;height: 30px"></img>楓幣排名</h2>
+                    <p>手持楓幣最高者Top10</p>
+                    <p>
+                        <a href="maple_mesoRank.xhtml" >
+                            <b:button outcome="" value="前往查看 »"/></a>
+                    </p>
+                </b:column>
+            </b:row>
+            <hr/>
+            <footer>
+                <p>©楓之谷 學術研究用 Java專題 By_Mico</p>
+            </footer>
+        </b:container>
+
+    </h:body>
+</html>
