@@ -2,6 +2,22 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/src/java/maple/mapleBean.java</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/web/download.xhtml</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/web/maple_fameRank.xhtml</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/nbproject/build-impl.xml</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/src/java/maple/Login.java</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/src/java/maple/DBOperation.java</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/web/download_manager.xhtml</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/web/WEB-INF/web.xml</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/web/maple_mesoRank.xhtml</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/web/maple.xhtml</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/src/java/encode/HexTool.java</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/web/nothing.xhtml</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/src/java/encode/LoginCrypto.java</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/web/maple_levelRank.xhtml</file>
+            <file>file:/Users/micoder/Desktop/Java/Homework_Dir/MapleWeb/MapleWeb/src/java/encode/StringUtil.java</file>
+        </group>
     </open-files>
 </project-private>

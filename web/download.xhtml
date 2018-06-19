@@ -13,7 +13,8 @@
             <b:navbarLinks>
                 <b:navLink value="首頁" href="maple.xhtml" iconAwesome="home"></b:navLink>
                 <b:dropMenu value="下載">
-                    <b:navLink value="遊戲主程式" href="download.xhtml"></b:navLink>
+                    <b:navLink value="網站主程式" href="download.xhtml"></b:navLink>
+                    <b:navLink value="GM管理程式" href="download_manager.xhtml"></b:navLink>
                     <b:navLink value="遊戲外掛" href="nothing.xhtml"></b:navLink>
                 </b:dropMenu>
                 <b:dropMenu value="排名">
@@ -23,15 +24,15 @@
                 </b:dropMenu>
             </b:navbarLinks>
 
-<!--            <h:form id="login" styleClass="navbar-form navbar-right">
-                <div class="form-group">
-                    <b:inputText value="maple" placeholder="輸入帳號" fieldSize="sm"/>
-                </div> 
-                <div class="form-group">
-                    <b:inputSecret value="password" placeholder="輸入密碼" fieldSize="sm"/>
-                </div> 
-                <b:commandButton action="myerp_read.xhtml" value="登入" look="success" icon="chevron-right" iconAlign="right"/>
-            </h:form>-->
+            <!--            <h:form id="login" styleClass="navbar-form navbar-right">
+                            <div class="form-group">
+                                <b:inputText value="maple" placeholder="輸入帳號" fieldSize="sm"/>
+                            </div> 
+                            <div class="form-group">
+                                <b:inputSecret value="password" placeholder="輸入密碼" fieldSize="sm"/>
+                            </div> 
+                            <b:commandButton action="myerp_read.xhtml" value="登入" look="success" icon="chevron-right" iconAlign="right"/>
+                        </h:form>-->
         </b:navBar>
 
         <b:jumbotron>
@@ -40,7 +41,7 @@
             </b:container>                       
             <b:container>
                 <h1>MapleStory  學術研究版</h1>
-                <p style="font-size:4.0em;">楓之谷<b:label text="TMSv113" severity="success" style="font-size:0.3em;"/><a href="" style="font-size:0.3em"> 下載<img src="resources/images/load_5.gif"></img></a></p>
+                <p style="font-size:4.0em;">楓之谷<b:label text="TMSv113" severity="success" style="font-size:0.3em;"/><a href="https://github.com/MiCoDer/MapleWeb_v113" style="font-size:0.3em"> 下載<img src="resources/images/load_5.gif"></img></a></p>
                 <p>MapleStory 學術研究版的官方網站，提供了等級排名查看，名聲排名查看，金錢排名查看等功能。
                 </p>
             </b:container>  
@@ -49,7 +50,7 @@
         <b:container>
             <b:row>
                 <b:column col-md="4">
-                    <h2>等級排名</h2>
+                    <h2><img src="resources/images/maplesword.png" style="width: 30px;height: 30px"></img>等級排名</h2>
                     <p>列舉全伺服器等級最高者Top10</p>
                     <p>
                         <a href="maple_levelRank.xhtml" >
@@ -57,7 +58,7 @@
                     </p>
                 </b:column>
                 <b:column col-md="4">
-                    <h2>名聲排名</h2>
+                    <h2><img src="resources/images/loveletter.png" style="width: 30px;height: 25px"></img>名聲排名</h2>
                     <p>誰是人氣王Top10？</p>
                     <p>
                         <a href="maple_fameRank.xhtml" >

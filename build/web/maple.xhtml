@@ -13,7 +13,8 @@
             <b:navbarLinks>
                 <b:navLink value="首頁" href="maple.xhtml" iconAwesome="home"></b:navLink>
                 <b:dropMenu value="下載">
-                    <b:navLink value="遊戲主程式" href="download.xhtml"></b:navLink>
+                    <b:navLink value="網站主程式" href="download.xhtml"></b:navLink>
+                    <b:navLink value="GM管理程式" href="download_manager.xhtml"></b:navLink>
                     <b:navLink value="遊戲外掛" href="nothing.xhtml"></b:navLink>
                 </b:dropMenu>
                 <b:dropMenu value="排名">
@@ -23,16 +24,19 @@
                 </b:dropMenu>
             </b:navbarLinks>
 
-<!--            <h:form id="login" styleClass="navbar-form navbar-right">
+            <h:form id="login" styleClass="navbar-form navbar-right">
                 <div class="form-group">
-                    <b:inputText value="maple" placeholder="輸入帳號" fieldSize="sm"/>
-                    input type="text" class="form-control" placeholder="Search"/
+                    <b:inputText  placeholder="輸入帳號" id="username" value="#{Login.username}" fieldSize="sm"/>
+                    <!--input type="text" class="form-control" placeholder="Search"/-->
                 </div> 
                 <div class="form-group">
-                    <b:inputSecret value="password" placeholder="輸入密碼" fieldSize="sm"/>
+                    <b:inputSecret placeholder="輸入密碼" id="password" value="#{Login.password}" fieldSize="sm"/>
                 </div> 
-                <b:commandButton action="myerp_read.xhtml" value="登入" look="success" icon="chevron-right" iconAlign="right"/>
-            </h:form>-->
+                <b:commandButton id="mybutton" action="#{Login.validateUsernamePassword}" value="領500" look="success" icon="chevron-right" iconAlign="right"/>
+                <h:outputText id="component" value="" binding="#{Login.component}"/>
+                <h:message style="#{Login.condition ? 'color: green' : 'color: red'}"  for="component"/>
+                
+            </h:form>
         </b:navBar>
 
         <b:jumbotron>
@@ -52,23 +56,23 @@
                         <b:column col-md="6">
                             <b:carousel  id="parque" style="width:550px">
                                 <b:carouselItem>
-                                    <b:image library="sap" name="sap1.jpg" tooltip="SAP example" />
+                                    <b:image library="sap" name="sap1.jpg" tooltip="Maple example" />
                                 </b:carouselItem>
                                 <b:carouselItem>
                                     <img src="resources/sap/sap1.jpg" alt="Maple example" />
                                 </b:carouselItem>
-                                
+
                             </b:carousel>
                         </b:column>
                         <b:column col-md="6">
                             <b:carousel  id="parque2" style="width:610px">
                                 <b:carouselItem>
-                                    <b:image library="ecount" name="ecount1.gif" tooltip="SAP example" />
+                                    <b:image library="ecount" name="ecount1.gif" tooltip="Maple example" />
                                 </b:carouselItem>
                                 <b:carouselItem>
-                                    <img src="resources/ecount/ecount2.gif" alt="Maple example" />
+                                    <b:image library="ecount" name="ecount2.gif" tooltip="Maple example" />
                                 </b:carouselItem>
-                                
+
                             </b:carousel>
                         </b:column>
                     </b:row>
@@ -79,7 +83,7 @@
         <b:container>
             <b:row>
                 <b:column col-md="4">
-                    <h2>等級排名</h2>
+                    <h2><img src="resources/images/maplesword.png" style="width: 30px;height: 30px"></img>等級排名</h2>
                     <p>列舉全伺服器等級最高者Top10</p>
                     <p>
                         <a href="maple_levelRank.xhtml" >
@@ -87,7 +91,7 @@
                     </p>
                 </b:column>
                 <b:column col-md="4">
-                    <h2>名聲排名</h2>
+                    <h2><img src="resources/images/loveletter.png" style="width: 30px;height: 25px"></img>名聲排名</h2>
                     <p>誰是人氣王Top10？</p>
                     <p>
                         <a href="maple_fameRank.xhtml" >
@@ -108,6 +112,10 @@
                 <p>©楓之谷 學術研究用 Java專題 By_Mico</p>
             </footer>
         </b:container>
-
+        <script>
+            //不清除的話再return後會password變成******導致null point
+            document.getElementById('input_login:password').value="";
+            
+        </script>
     </h:body>
 </html>

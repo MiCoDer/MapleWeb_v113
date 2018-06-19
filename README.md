@@ -40,4 +40,4 @@ create-domain --adminport 4848 domain1
 ------------------------------
 
 ![alt text](https://i.imgur.com/551Rkab.jpg)
-![alt text](https://i.imgur.com/6knEsQE.png)
+![alt text](https://i.imgur.com/vrCm4tR.png)

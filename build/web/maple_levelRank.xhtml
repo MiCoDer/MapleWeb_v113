@@ -7,11 +7,12 @@
         <title>MapleStory｜回到最初的感動</title>
     </h:head>
     <h:body style="padding-top: 50px; padding-bottom: 20px;">
-        <b:navBar brand="楓之谷" brandHref="maple.xhtml" inverse="true" fixed="top">
+        <b:navBar brand="楓之谷" brandHref="maple.xhtml" inverse="true" fixed="top" >
             <b:navbarLinks>
                 <b:navLink value="首頁" href="maple.xhtml" iconAwesome="home"></b:navLink>
                 <b:dropMenu value="下載">
-                    <b:navLink value="遊戲主程式" href="download.xhtml"></b:navLink>
+                    <b:navLink value="網站主程式" href="download.xhtml"></b:navLink>
+                    <b:navLink value="GM管理程式" href="download_manager.xhtml"></b:navLink>
                     <b:navLink value="遊戲外掛" href="nothing.xhtml"></b:navLink>
                 </b:dropMenu>
                 <b:dropMenu value="排名">
@@ -34,7 +35,7 @@
         </b:navBar>
         <b:jumbotron>
             <b:container>
-                <h1>楓之谷 等級排名Top10</h1>
+                <h1>楓之谷 <img src="resources/images/maplesword.png" style="width: 50px;height: 50px"></img>等級排名Top10</h1>
             </b:container>
             <b:container>
                 <h:form>
@@ -53,7 +54,7 @@
         <b:container>
             <b:row>
                 <b:column col-md="4">
-                    <h2>等級排名</h2>
+                    <h2><img src="resources/images/maplesword.png" style="width: 30px;height: 30px"></img>等級排名</h2>
                     <p>列舉全伺服器等級最高者Top10</p>
                     <p>
                         <a href="maple_levelRank.xhtml" >
@@ -61,7 +62,7 @@
                     </p>
                 </b:column>
                 <b:column col-md="4">
-                    <h2>名聲排名</h2>
+                    <h2><img src="resources/images/loveletter.png" style="width: 30px;height: 25px"></img>名聲排名</h2>
                     <p>誰是人氣王Top10？</p>
                     <p>
                         <a href="maple_fameRank.xhtml" >
